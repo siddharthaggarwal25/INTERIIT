@@ -120,7 +120,8 @@
 }
 .frameParent {
      width: 100%;
-     position: relative;
+     position: fixed;
+     top: 0;
      background-color: rgba(144, 1, 255, 0.08);
      height: 100px;
      overflow: hidden;
