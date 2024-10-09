@@ -146,6 +146,7 @@
 .b {
      align-self: stretch;
      position: relative;
+     
      letter-spacing: -0.02em;
 }
 .talent {
