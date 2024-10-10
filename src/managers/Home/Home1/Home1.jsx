@@ -52,16 +52,19 @@ const Home1 = () => {
               </div>
             </div>
             <div className={styles.frameParent1}>
-              <div className={styles.bxsearchParent}>
-                <img className={styles.bxsearchIcon} alt="" src={search} />
-                <div className={styles.searchForYour}>
-                  Search for your dream project
-                </div>
-              </div>
-              <div className={styles.searchWrapper}>
-                <div className={styles.searchForYour}>Search</div>
-              </div>
-            </div>
+  <div className={styles.bxsearchParent}>
+    <img className={styles.bxsearchIcon} alt="" src={search} />
+    {/* Input field with placeholder */}
+    <input
+      className={styles.searchInput}
+      type="text"
+      placeholder="Search for your dream project"
+    />
+    {/* Search button */}
+    <button className={styles.searchButton}>Search</button>
+  </div>
+</div>
+
           </div>
           <div className={styles.popularProjectsYouCanStartParent}>
             <div className={styles.popularProjectsYou}>

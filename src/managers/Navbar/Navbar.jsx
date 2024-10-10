@@ -5,23 +5,18 @@ import search from "../../assets/search.svg";
 import down_arrow from "../../assets/down_arrow.svg";
 
 const Navbar = () => {
-
   return (
-    <div className={styles.frameParent}>
-      <div className={styles.frameGroup}>
+    <div style={{ zIndex: 50 }} className={styles.frameParent}>
+      <div style={{ zIndex: 50 }} className={styles.frameGroup}>
         <div className={styles.trumioLogo1Parent}>
-          <img
-            className={styles.trumioLogo1Icon}
-            alt=""
-            src={logo_with_name}
-          />
-          <div className={styles.frameWrapper}>
-            <div className={styles.bxsearchParent}>
-              <img className={styles.bxsearchIcon} alt="" src={search} />
-              <div className={styles.searchForYour}>
-                Search for your dream project
-              </div>
-            </div>
+          <img className={styles.trumioLogo1Icon} alt="" src={logo_with_name} />
+          <div className={styles.searchWrapper}>
+            <img className={styles.bxsearchIcon} alt="" src={search} />
+            <input
+              className={styles.searchInput}
+              type="text"
+              placeholder="Search for your dream project"
+            />
           </div>
         </div>
         <div className={styles.frameContainer}>
@@ -29,27 +24,15 @@ const Navbar = () => {
             <div className={styles.searchForYour}>Home</div>
             <div className={styles.usersParent}>
               <div className={styles.searchForYour}>Users</div>
-              <img
-                className={styles.primesortDownFillIcon}
-                alt=""
-                src={down_arrow}
-              />
+              <img className={styles.primesortDownFillIcon} alt="" src={down_arrow} />
             </div>
             <div className={styles.usersParent}>
               <div className={styles.searchForYour}>Solutions</div>
-              <img
-                className={styles.primesortDownFillIcon}
-                alt=""
-                src={down_arrow}
-              />
+              <img className={styles.primesortDownFillIcon} alt="" src={down_arrow} />
             </div>
             <div className={styles.usersParent}>
               <div className={styles.searchForYour}>Organization</div>
-              <img
-                className={styles.primesortDownFillIcon}
-                alt=""
-                src={down_arrow}
-              />
+              <img className={styles.primesortDownFillIcon} alt="" src={down_arrow} />
             </div>
             <div className={styles.searchForYour}>Blogs</div>
           </div>

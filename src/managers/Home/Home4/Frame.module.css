@@ -1,0 +1,181 @@
+.host {
+     color: #ae01ff;
+}
+
+.popularProjectsYou {
+     align-self: stretch;
+     position: relative;
+     letter-spacing: -0.02em;
+     font-weight: 500;
+}
+.popularProjectsYouCanStartParent {
+     width: 784px;
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     justify-content: flex-start;
+     gap: 16px;
+     font-size: 20px;
+}
+.readyHostYourContainer {
+     width: 766px;
+     position: relative;
+     letter-spacing: -0.02em;
+     line-height: 103px;
+     display: inline-block;
+}
+.exploreADiverse {
+     width: 637.3px;
+     position: relative;
+     font-size: 22px;
+     letter-spacing: -0.02em;
+     color: rgba(0, 0, 0, 0.6);
+     display: inline-block;
+}
+.readyHostYourOwnOpportuniParent {
+     font-size: 60px;
+     align-self: stretch;
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     justify-content: flex-start;
+     gap: 24px;
+}
+.popularProjectsYou {
+     align-self: stretch;
+     position: relative;
+     letter-spacing: -0.02em;
+     font-weight: 500;
+}
+.uiux {
+     position: relative;
+     letter-spacing: -0.02em;
+     font-weight: 500;
+}
+.uiuxWrapper {
+     border-radius: 16px;
+     background-color: #fff;
+     border: 2px solid rgba(0, 0, 0, 0.1);
+     overflow: hidden;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: center;
+     padding: 12px 24px;
+}
+.frameContainer {
+     align-self: stretch;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: flex-start;
+     gap: 32px;
+     font-size: 18px;
+     color: rgba(0, 0, 0, 0.6);
+}
+.popularProjectsYouCanStartParent {
+     width: 784px;
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     justify-content: flex-start;
+     gap: 16px;
+     font-size: 20px;
+}
+.hostNow {
+     position: relative;
+     letter-spacing: -0.02em;
+     font-weight: 600;
+}
+.biarrowUpIcon {
+     width: 44.4px;
+     position: relative;
+     height: 44.4px;
+     overflow: hidden;
+     flex-shrink: 0;
+     object-fit: contain;
+}
+.hostNowParent {
+     border-radius: 100px;
+     background-color: #ae01ff;
+     overflow: hidden;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: flex-start;
+     padding: 12px 32px;
+     gap: 10px;
+     scale: 0.8;
+}
+.knowMoreWrapper {
+     align-self: stretch;
+     border-radius: 100px;
+     border: 2px solid #ae01ff;
+     overflow: hidden;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: flex-start;
+     padding: 12px 32px;
+     color: rgba(0, 0, 0, 0.6);
+     scale: 0.8;
+}
+.frameDiv {
+     display: flex;
+     flex-direction: row;
+     align-items: flex-start;
+     justify-content: flex-start;
+     font-size: 24px;
+     color: #fff;
+}
+.frameGroup {
+     width: 814px;
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     justify-content: flex-start;
+     gap: 36px;
+}
+.cfe6d841Frame10000124211Icon {
+     width: 556.3px;
+     position: relative;
+     height: 523.4px;
+     object-fit: cover;
+}
+.frameParent {
+     position: relative;
+     width: 100%;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: center;
+     gap: 94px;
+     text-align: left;
+     font-size: 72px;
+     color: rgba(0, 0, 0, 0.8);
+     font-family: Poppins;
+}
+
+
+
+.uiuxWrapper {
+     border-radius: 16px;
+     background-color: #fff;
+     border: 2px solid rgba(0, 0, 0, 0.1);
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: center;
+     padding: 10px 20px;
+     width: fit-content;
+}
+.frameParent2 {
+     align-self: stretch;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: flex-start;
+     gap: 32px;
+     font-size: 16px;
+     color: rgba(0, 0, 0, 0.6);
+}
