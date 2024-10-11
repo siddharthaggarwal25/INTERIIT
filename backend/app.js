@@ -15,7 +15,12 @@ app.use((req, res, next) => {
 });
 
 const userRoutes = require('./routes/UserRoutes');
+const  ProjectRoutes = require ("./routes/ProjectRoutes")
+const BiddingRoutes = require ( "./routes/BiddingRoutes");
+
 app.use( userRoutes)
+app.use( ProjectRoutes)
+app.use ( BiddingRoutes)
 app.use((req, res, next) => next (new HttpError('Could not find this route.', 404)));
 
 app.use((error, req, res, next) => {
