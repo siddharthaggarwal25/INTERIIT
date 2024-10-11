@@ -1,0 +1,127 @@
+.students {
+     color: #ae01ff;
+}
+.whatOurStudentsContainer {
+     position: relative;
+     letter-spacing: -0.02em;
+}
+.icroundStarIcon {
+     width: 32px;
+     position: relative;
+     height: 32px;
+     overflow: hidden;
+     flex-shrink: 0;
+}
+.icroundStarParent {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: flex-start;
+     gap: 16px;
+}
+.wonderfulExperience {
+     align-self: stretch;
+     position: relative;
+     letter-spacing: -0.02em;
+     font-weight: 600;
+}
+.trumioHasEnhanced {
+     align-self: stretch;
+     position: relative;
+     font-size: 16px;
+     letter-spacing: -0.02em;
+     color: rgba(0, 0, 0, 0.6);
+}
+.wonderfulExperienceParent {
+     align-self: stretch;
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     justify-content: flex-start;
+     gap: 2px;
+}
+.frameDiv {
+     align-self: stretch;
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     justify-content: flex-start;
+     gap: 12px;
+}
+.frameChild {
+     width: 44px;
+     position: relative;
+     border-radius: 100px;
+     background-color: #968e8e;
+     height: 44px;
+}
+.iitKharagpur {
+     align-self: stretch;
+     position: relative;
+     font-size: 12px;
+     letter-spacing: -0.02em;
+     color: rgba(0, 0, 0, 0.6);
+}
+.amanYadavParent {
+     width: 103px;
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     justify-content: flex-start;
+     gap: 2px;
+}
+.frameParent1 {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: flex-start;
+     gap: 8px;
+     font-size: 16px;
+}
+.frameContainer {
+     width: 482.7px;
+     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+     border-radius: 24px;
+     background-color: #fff;
+     overflow: hidden;
+     flex-shrink: 0;
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     justify-content: flex-start;
+     padding: 32px;
+     box-sizing: border-box;
+     gap: 32px;
+}
+.frameGroup {
+     align-self: stretch;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: flex-start;
+     gap: 60px;
+     font-size: 28px;
+}
+.whatOurStudentsSayAboutUsParent {
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     justify-content: center;
+     gap: 34px;
+     margin: auto auto;
+}
+.frameParent {
+     width: 100%;
+     
+     position: relative;
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     justify-content: center;
+     gap: 40px;
+     text-align: left;
+     font-size: 44px;
+     color: rgba(0, 0, 0, 0.8);
+     font-family: Poppins;
+}
+

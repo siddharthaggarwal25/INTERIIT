@@ -1,0 +1,182 @@
+.howIsTrumio {
+     position: relative;
+     letter-spacing: -0.02em;
+     font-weight: 600;
+   }
+   
+   .lsiconminusOutline {
+     width: 40px;
+     position: relative;
+     /* height: 40px; */
+     overflow: hidden;
+     flex-shrink: 0;
+   }
+   
+   .howIsTrumioEnablingTheFutParent {
+     width: 100%;
+     /* align-self: stretch; */
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: space-between;
+     cursor: pointer;
+     font-size: 26px;
+   }
+   
+   .byHelpingGlobal {
+     margin: 0;
+   }
+   
+   .byHelpingGlobalContainer {
+     padding-top: 10px;
+     width: 647.7px;
+     position: relative;
+     font-size: 20px;
+     letter-spacing: -0.02em;
+     color: rgba(0, 0, 0, 0.6);
+     display: inline-block;
+   }
+   
+   .frameGroup {
+     align-self: stretch;
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     justify-content: flex-start;
+     gap: 16px;
+   }
+   
+   .frameWrapper {
+     align-self: stretch;
+     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+     border-radius: 16px;
+     background-color: #fff;
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     justify-content: flex-start;
+     padding: 24px;
+     color: rgba(0, 0, 0, 0.8);
+     scale: 0.9;
+   }
+   
+   .isThereAFeeForUsingTrumiParent {
+     width: 100%;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: space-between;
+     padding: 0px 24px;
+     cursor: pointer;
+   }
+   
+   .frameChild {
+     width: 100%;
+     position: relative;
+     background-color: rgba(0, 0, 0, 0.1);
+     height: 1px;
+     overflow: hidden;
+     flex-shrink: 0;
+   }
+   
+
+   
+   /* Dropdown content styling with smooth transitions */
+   .dropdownContent {
+     max-height: 0;
+     overflow: hidden;
+     transition: max-height 0.4s ease-in-out;
+   }
+   
+   .dropdownContent.active {
+     max-height: 10px; /* Adjust this value according to the content */
+     transition: max-height 0.4s ease-in-out;
+   }
+   
+   /* Add border styling to the sections similar to the first one */
+   .sectionWithBorder {
+     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+     border-radius: 16px;
+     background-color: #fff;
+     padding: 0px 0px;
+     margin-bottom: 16px;
+     transition: all 0.3s ease;
+   }
+   
+
+
+   .lsiconminusOutline {
+     width: 40px;
+     position: relative;
+     height: 40px;
+     overflow: hidden;
+     flex-shrink: 0;
+   }
+   
+ 
+   .byHelpingGlobal {
+     margin: 0;
+   }
+   
+   .byHelpingGlobalContainer {
+     width: 100%;
+     position: relative;
+     font-size: 20px;
+     letter-spacing: -0.02em;
+     color: rgba(0, 0, 0, 0.6);
+     display: inline-block;
+   }
+   
+   .frameChild {
+     width: 90%;
+     position: relative;
+     background-color: rgba(0, 0, 0, 0.1);
+     height: 1px;
+     overflow: hidden;
+     flex-shrink: 0;
+   }
+   
+   .frameParent {
+     width: 100%;
+     position: relative;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-between;
+     gap: 24px;
+     text-align: left;
+     font-size: 28px;
+     color: rgba(0, 0, 0, 0.6);
+     font-family: Poppins;
+   }
+   
+   /* Dropdown content styling with smooth transitions */
+   .dropdownContent {
+     max-height: 0;
+     overflow: hidden;
+     transition: max-height 0.4s ease-in-out;
+   }
+   
+   .dropdownContent.active {
+     max-height: 300px; /* Adjust this value according to the content */
+     transition: max-height 0.4s ease-in-out;
+   }
+   
+   /* Section default styling (3rd section style) */
+   .section {
+     padding: 0px 24px;
+     background-color: transparent;
+     transition: all 0.3s ease;
+     border: none;
+     width: 100%;
+   }
+   
+   /* When dropdown is open (1st section style) */
+   .activeSection {
+     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+     border-radius: 16px;
+     background-color: #fff;
+     padding: 24px;
+     transition: all 0.3s ease;
+   }
+   
