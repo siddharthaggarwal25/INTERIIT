@@ -27,7 +27,7 @@ const ProjectSchema = new mongoose.Schema({
   },
   HostID :{
      type : String  ,
-     required : true 
+     required: true 
   },
   Teams: [
     {
