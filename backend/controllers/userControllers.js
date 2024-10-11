@@ -99,7 +99,7 @@ const onbording = async (req, res, next) => {
   if (!CollegeName) return new HttpError(" require College Name", 403);
   if (!Skills) return new HttpError(" require atleast one Skill", 403);
 
-  let userId = req.params.UserID; 
+  let userId = req.params.userId; 
 
   let existingUser;
   try {

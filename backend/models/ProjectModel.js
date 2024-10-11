@@ -13,7 +13,7 @@ const ProjectSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  SkilsReq: {
+  SkillsReq: {
     type: String,
     required: true,
   },
@@ -24,6 +24,10 @@ const ProjectSchema = new mongoose.Schema({
   Deadline: {
     type: String,
     required: true,
+  },
+  HostID :{
+     type : String  ,
+     required : true 
   },
   Teams: [
     {
