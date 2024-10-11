@@ -9,6 +9,7 @@ const HostProject = async (req, res, next) => {
   let Deadline = req.body.Deadline;
   let Amount = req.body.Amount;
 
+   const  HostID = req.params.HostID
   const createProject = new Project({
     NameProject: NameProject,
     ProjectInfo: ProjectInfo,
@@ -16,6 +17,8 @@ const HostProject = async (req, res, next) => {
     SkillsReq: SkillsReq,
     Amount: Amount,
     Deadline: Deadline,
+    HostID  :HostID ,
+    Teams :[]
   });
   let createdProject;
   try {
