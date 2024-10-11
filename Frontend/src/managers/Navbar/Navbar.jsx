@@ -43,11 +43,13 @@ const Navbar = () => {
             <div className={styles.hostWrapper}>
               <div className={styles.host}>Host +</div>
             </div>
+            {!localStorage.getItem("userId") ? (
             <div onClick={()=>{
               navigate("/login")
             }} className={`cursor-pointer ${styles.logInWrapper}`}>
               <div className={styles.host}>Log in</div>
             </div>
+            ) : ("")}
           </div>
         </div>
       </div>

@@ -35,7 +35,7 @@ const Login = () => {
                     toast.success("User Logged In Successfully");
                     localStorage.setItem("userId", res.data.UserId);
                     setTimeout(() => {
-                         window.location.href = "/";
+                         window.location.href = "/complete-details";
                          }
                     , 2000);
           })

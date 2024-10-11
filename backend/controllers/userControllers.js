@@ -88,6 +88,50 @@ const login = async (req, res, next) => {
   });
 };
 
+const completeUserDetails = async (req, res, next) => {
+    let CollegeName = req.body.collegeName;
+    let YearOfPassing = req.body.yearOfPassing;
+    let WorkExperience = req.body.workExperience;
+    let GitHubURL = req.body.githubURL;
+    let LinkedinURL = req.body.linkedinURL;
+    let Skills = req.body.skills;
+    let DOB = req.body.dob;
+
+    
+    let userId = req.params.userId;
+
+    let existingUser;
+    try {
+        existingUser = await User.findById ( userId);
+    } catch (error) {
+        return next(new HttpError("Logging up failed try agin later ", 500));
+    }
+
+    if (!existingUser) {
+        return next(new HttpError("wrong credentials", 422));
+    }
+
+    existingUser.CollegeName = CollegeName;
+    existingUser.YearOfPassing = YearOfPassing;
+    existingUser.WorkExperience = WorkExperience ;
+    existingUser.GitHubURL= GitHubURL;
+    existingUser.LinkedinURL = LinkedinURL ;
+    existingUser.Skills = Skills ;
+    existingUser.DOB = DOB;
+
+    try {
+        await existingUser.save();
+    }catch( error ){
+        return new HttpError (" error occured"  , 401);
+    }
+
+    res.send (" use oborded");
+
+
+};
+
+
+
 const onbording = async (req, res, next) => {
   let CollegeName = req.body.CollegeName;
   let YearOfPassing = req.body.YearOfPassing;
@@ -131,3 +175,4 @@ const onbording = async (req, res, next) => {
 exports.signup = signup;
 exports.login = login;
 exports.onbording = onbording;
+exports.completeUserDetails = completeUserDetails;

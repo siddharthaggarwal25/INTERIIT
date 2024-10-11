@@ -17,24 +17,35 @@ const userSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  DOB: {
+    type: String,
+  },
+
   CollegeName: {
     type: String,
   },
   YearOfPassing: {
     type: String,
   },
-  WorkExperience: {
-    type: String,
-  },
+  WorkExperience: [
+    {
+      type: String,
+    },
+  ],
   GitHubURL: {
     type: String,
   },
-  LinkdienURL: {
+  LinkedinURL: {
     type: String,
   },
-  Skills: {
-    type: String,
-  },
+  Skills: [
+    {
+      type: String,
+    },
+  ]
+},
+{
+  timestamps: true,
 });
 
 module.exports = mongoose.model("User", userSchema);
