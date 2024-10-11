@@ -4,6 +4,7 @@ const HttpError = require("./utils/Http-Error");
 
 const app = express();
 
+
 mongoose
   .connect("mongodb://127.0.0.1:27017/InterIIT")
   .then(() => console.log("Connected to database"))
@@ -46,4 +47,4 @@ app.use((error, req, res, next) => {
   res.json({ message: error.message || "An unknown error occurred!" });
 });
 
-app.listen(5000, () => console.log("Listening on port 5000"));
+app.listen(8000, () => console.log("Listening on port 8000"));

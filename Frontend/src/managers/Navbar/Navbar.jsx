@@ -3,13 +3,16 @@ import styles from "./Navbar.module.css";
 import logo_with_name from "../../assets/logo_with_name.svg";
 import search from "../../assets/search.svg";
 import down_arrow from "../../assets/down_arrow.svg";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
+
+  const navigate = useNavigate();
   return (
     <div style={{ zIndex: 50 }} className={styles.frameParent}>
       <div style={{ zIndex: 50 }} className={styles.frameGroup}>
         <div className={styles.trumioLogo1Parent}>
-          <img className={styles.trumioLogo1Icon} alt="" src={logo_with_name} />
+          <img onClick={()=>window.location.href = "/"} className={`cursor-pointer ${styles.trumioLogo1Icon}`} alt="" src={logo_with_name} />
           <div className={styles.searchWrapper}>
             <img className={styles.bxsearchIcon} alt="" src={search} />
             <input
@@ -40,7 +43,9 @@ const Navbar = () => {
             <div className={styles.hostWrapper}>
               <div className={styles.host}>Host +</div>
             </div>
-            <div className={styles.logInWrapper}>
+            <div onClick={()=>{
+              navigate("/login")
+            }} className={`cursor-pointer ${styles.logInWrapper}`}>
               <div className={styles.host}>Log in</div>
             </div>
           </div>

@@ -1,12 +1,13 @@
 const HttpError = require("../utils/Http-Error");
 const User = require("../models/UserModel");
-// const bcrypt = require ( bcryptjs)
+const bcrypt = require("bcryptjs");
 const signup = async (req, res, next) => {
   // check vaildness
-  let Name = req.body.Name;
-  let PersonalEmail = req.body.PersonalEmail;
-  let PhoneNumber = req.body.PhoneNumber;
-  let Password = req.body.Password;
+  let Name = req.body.name;
+  let PersonalEmail = req.body.email;
+  let PhoneNumber = req.body.phone;
+  let Password = req.body.password;
+
 
   let existingUser;
   try {
@@ -19,12 +20,16 @@ const signup = async (req, res, next) => {
     return next(new HttpError("User already exist try again later", 422));
   }
 
+  
+  
   let hashPassword;
   try {
     hashPassword = await bcrypt.hash(Password, 12);
   } catch (error) {
     return next(new HttpError("Could not create user , try again later ", 500));
   }
+
+  
 
   const createUser = new User({
     Name: Name,
@@ -44,8 +49,8 @@ const signup = async (req, res, next) => {
 };
 
 const login = async (req, res, next) => {
-  let PersonalEmail = req.body.PersonalEmail;
-  let Password = req.body.Password;
+  let PersonalEmail = req.body.email;
+  let Password = req.body.password;
 
   let existingUser;
   try {
