@@ -2,7 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import Navbar from './managers/Navbar/Navbar'
 import { Routes, Route } from 'react-router-dom'
-import Home from './managers/Home/Home'
+import Home from './managers/Landingpage/Landingpage'
 import Login from './managers/Login/Login'
 import Signup from './managers/Signup/signup'
 
