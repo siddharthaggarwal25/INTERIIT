@@ -8,7 +8,6 @@ const signup = async (req, res, next) => {
   let PhoneNumber = req.body.phone;
   let Password = req.body.password;
 
-
   let existingUser;
   try {
     existingUser = await User.findOne({ PersonalEmail: PersonalEmail });
@@ -20,16 +19,12 @@ const signup = async (req, res, next) => {
     return next(new HttpError("User already exist try again later", 422));
   }
 
-  
-  
   let hashPassword;
   try {
     hashPassword = await bcrypt.hash(Password, 12);
   } catch (error) {
     return next(new HttpError("Could not create user , try again later ", 500));
   }
-
-  
 
   const createUser = new User({
     Name: Name,
@@ -89,48 +84,43 @@ const login = async (req, res, next) => {
 };
 
 const completeUserDetails = async (req, res, next) => {
-    let CollegeName = req.body.collegeName;
-    let YearOfPassing = req.body.yearOfPassing;
-    let WorkExperience = req.body.workExperience;
-    let GitHubURL = req.body.githubURL;
-    let LinkedinURL = req.body.linkedinURL;
-    let Skills = req.body.skills;
-    let DOB = req.body.dob;
+  let CollegeName = req.body.collegeName;
+  let YearOfPassing = req.body.yearOfPassing;
+  let WorkExperience = req.body.workExperience;
+  let GitHubURL = req.body.githubURL;
+  let LinkedinURL = req.body.linkedinURL;
+  let Skills = req.body.skills;
+  let DOB = req.body.dob;
 
-    
-    let userId = req.params.userId;
+  let userId = req.params.userId;
 
-    let existingUser;
-    try {
-        existingUser = await User.findById ( userId);
-    } catch (error) {
-        return next(new HttpError("Logging up failed try agin later ", 500));
-    }
+  let existingUser;
+  try {
+    existingUser = await User.findById(userId);
+  } catch (error) {
+    return next(new HttpError("Logging up failed try agin later ", 500));
+  }
 
-    if (!existingUser) {
-        return next(new HttpError("wrong credentials", 422));
-    }
+  if (!existingUser) {
+    return next(new HttpError("wrong credentials", 422));
+  }
 
-    existingUser.CollegeName = CollegeName;
-    existingUser.YearOfPassing = YearOfPassing;
-    existingUser.WorkExperience = WorkExperience ;
-    existingUser.GitHubURL= GitHubURL;
-    existingUser.LinkedinURL = LinkedinURL ;
-    existingUser.Skills = Skills ;
-    existingUser.DOB = DOB;
+  existingUser.CollegeName = CollegeName;
+  existingUser.YearOfPassing = YearOfPassing;
+  existingUser.WorkExperience = WorkExperience;
+  existingUser.GitHubURL = GitHubURL;
+  existingUser.LinkedinURL = LinkedinURL;
+  existingUser.Skills = Skills;
+  existingUser.DOB = DOB;
 
-    try {
-        await existingUser.save();
-    }catch( error ){
-        return new HttpError (" error occured"  , 401);
-    }
+  try {
+    await existingUser.save();
+  } catch (error) {
+    return new HttpError(" error occured", 401);
+  }
 
-    res.send (" use oborded");
-
-
+  res.send(" use oborded");
 };
-
-
 
 const onbording = async (req, res, next) => {
   let CollegeName = req.body.CollegeName;
@@ -143,11 +133,11 @@ const onbording = async (req, res, next) => {
   if (!CollegeName) return new HttpError(" require College Name", 403);
   if (!Skills) return new HttpError(" require atleast one Skill", 403);
 
-  let userId = req.params.userId; 
+  let userId = req.params.userId;
 
   let existingUser;
   try {
-    existingUser = await User.findById ( userId);
+    existingUser = await User.findById(userId);
   } catch (error) {
     return next(new HttpError("Logging up failed try agin later ", 500));
   }
@@ -158,18 +148,17 @@ const onbording = async (req, res, next) => {
 
   existingUser.CollegeName = CollegeName;
   existingUser.YearOfPassing = YearOfPassing;
-  existingUser.WorkExperience = WorkExperience ;
-  existingUser.GitHubURL= GitHubURL;
-  existingUser.LinkdienURL = LinkdienURL ;
-  existingUser.Skills = Skills ;
-  
-   
+  existingUser.WorkExperience = WorkExperience;
+  existingUser.GitHubURL = GitHubURL;
+  existingUser.LinkdienURL = LinkdienURL;
+  existingUser.Skills = Skills;
+
   try {
-     await existingUser.save();
-  }catch( error ){
-    return new HttpError (" error occured"  , 401);
+    await existingUser.save();
+  } catch (error) {
+    return new HttpError(" error occured", 401);
   }
-   res.send (" use oborded");
+  res.send(" use oborded");
 };
 
 exports.signup = signup;
