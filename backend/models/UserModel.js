@@ -20,7 +20,6 @@ const userSchema = new mongoose.Schema({
   CollegeName: {
     type: String,
   },
-  CollegeEmail: {},
   YearOfPassing: {
     type: String,
   },
