@@ -1,7 +1,6 @@
 const HttpError = require("../utils/Http-Error");
-const bcrypt = require("bcryptjs");
 const User = require("../models/UserModel");
-
+// const bcrypt = require ( bcryptjs)
 const signup = async (req, res, next) => {
   // check vaildness
   let Name = req.body.Name;

@@ -4,4 +4,4 @@ const AddBid = ( req ,res ,next) =>{
     res.send(" new bidd added")
 }
 
-exports.AddBid = AddBid
+exports.AddBid = AddBid ;
