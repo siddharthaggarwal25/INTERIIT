@@ -25,7 +25,7 @@ const ProjectSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  HostName :{
+  HostID :{
      type : String  ,
      required: true 
   },

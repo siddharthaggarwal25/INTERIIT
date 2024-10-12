@@ -1,35 +1,38 @@
 const HttpError = require("../utils/Http-Error");
 const Project = require("../models/ProjectModel");
-
 const HostProject = async (req, res, next) => {
-  let NameProject = req.body.NameProject;
-  let ProjectInfo = req.body.ProjectInfo;
-  let Domain = req.body.Domain;
-  let SkillsReq = req.body.SkillsReq;
-  let Deadline = req.body.Deadline;
-  let Amount = req.body.Amount;
+  const { NameProject, ProjectInfo, Domain, SkillsReq, Deadline, Amount } = req.body;
+  const HostID = req.params.userID;
 
-   const  HostID = req.params.HostID
+  // Create a new project instance
   const createProject = new Project({
-    NameProject: NameProject,
-    ProjectInfo: ProjectInfo,
-    Domain: Domain,
-    SkillsReq: SkillsReq,
-    Amount: Amount,
-    Deadline: Deadline,
-    HostID  :HostID ,
-    Teams :[]
+    NameProject,
+    ProjectInfo,
+    Domain,
+    SkillsReq,
+    Deadline,
+    Amount,
+    HostID,
+    Teams: []
   });
+
+  console.log(createProject); // For debugging
+
   let createdProject;
+
   try {
-    createdProject = await createProject.save();
+    createdProject = await createProject.save(); // Save the project
   } catch (error) {
-    return new HttpError(" project not added , plz check ", 401);
+    console.error("Error while saving project:", error); // Log the error for debugging
+    return next(new HttpError("Project not added, please check.", 500)); // Pass the error to middleware
   }
 
-  if (!createdProject) return new HttpError(" error  occured ", 401);
+  if (!createdProject) {
+    return next(new HttpError("Error occurred during project creation.", 500)); // Handle case where project is not created
+  }
 
-  res.send("  project created");
+  // Respond with a success message
+  res.status(201).json({ message: "Project created successfully!", project: createdProject });
 };
 
 const showProject = async (req, res, next) => {
