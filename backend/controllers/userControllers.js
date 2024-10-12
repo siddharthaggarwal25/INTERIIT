@@ -131,48 +131,6 @@ const completeUserDetails = async (req, res, next) => {
 };
 
 
-
-const onbording = async (req, res, next) => {
-  let CollegeName = req.body.CollegeName;
-  let YearOfPassing = req.body.YearOfPassing;
-  let WorkExperience = req.body.WorkExperience;
-  let GitHubURL = req.body.GitHubURL;
-  let LinkdienURL = req.body.LinkdienURL;
-  let Skills = req.body.Skills;
-
-  if (!CollegeName) return new HttpError(" require College Name", 403);
-  if (!Skills) return new HttpError(" require atleast one Skill", 403);
-
-  let userId = req.params.userId; 
-
-  let existingUser;
-  try {
-    existingUser = await User.findById ( userId);
-  } catch (error) {
-    return next(new HttpError("Logging up failed try agin later ", 500));
-  }
-
-  if (!existingUser) {
-    return next(new HttpError("wrong credentials", 422));
-  }
-
-  existingUser.CollegeName = CollegeName;
-  existingUser.YearOfPassing = YearOfPassing;
-  existingUser.WorkExperience = WorkExperience ;
-  existingUser.GitHubURL= GitHubURL;
-  existingUser.LinkdienURL = LinkdienURL ;
-  existingUser.Skills = Skills ;
-  
-   
-  try {
-     await existingUser.save();
-  }catch( error ){
-    return new HttpError (" error occured"  , 401);
-  }
-   res.send (" use oborded");
-};
-
 exports.signup = signup;
 exports.login = login;
-exports.onbording = onbording;
 exports.completeUserDetails = completeUserDetails;
