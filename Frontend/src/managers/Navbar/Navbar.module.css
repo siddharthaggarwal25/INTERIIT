@@ -1,167 +1,175 @@
-     .trumioLogo1Icon {
-          width: 143.1px;
-          position: relative;
-          height: 43.8px;
-          object-fit: cover;
-     }
-     .bxsearchIcon {
-          width: 20px;
-          position: relative;
-          height: 20px;
-          overflow: hidden;
-          flex-shrink: 0;
-     }
-     .searchForYour {
-          position: relative;
-          letter-spacing: -0.02em;
-          
-     }
-     .bxsearchParent {
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          justify-content: flex-start;
-          gap: 8px;
-     }
-     .frameWrapper {
-          width: 368px;
-          border-radius: 100px;
-          background-color: rgba(255, 255, 255, 0.2);
-          border: 2px solid rgba(0, 0, 0, 0.1);
-          box-sizing: border-box;
-          overflow: hidden;
-          flex-shrink: 0;
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          justify-content: flex-start;
-          padding: 12px 24px;
-     }
-     .trumioLogo1Parent {
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          justify-content: flex-start;
-          gap: 32px;
-     }
-     .primesortDownFillIcon {
-          width: 18px;
-          position: relative;
-          height: 18px;
-          overflow: hidden;
-          flex-shrink: 0;
-     }
-     .usersParent {
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          justify-content: flex-start;
-          gap: 4px;
-     }
-     .homeParent {
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          justify-content: flex-start;
-          gap: 44px;
-     }
-     .host {
-          position: relative;
-          letter-spacing: -0.02em;
-          font-weight: 500;
-     }
-     .hostWrapper {
-          border-radius: 100px;
-          background-color: #fff;
-          overflow: hidden;
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          justify-content: center;
-          padding: 8px 32px;
-     }
-     .logInWrapper {
-          border-radius: 100px;
-          background-color: #ae01ff;
-          overflow: hidden;
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          justify-content: center;
-          padding: 8px 32px;
-          color: #fff;
-     }
-     .frameDiv {
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          justify-content: flex-start;
-          gap: 24px;
-          color: #ae01ff;
-     }
-     .frameContainer {
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          justify-content: flex-start;
-          gap: 46px;
-          font-size: 18px;
-          color: rgba(0, 0, 0, 0.6);
-     }
-     .frameGroup {
-          position: absolute;
-          top: calc(50% - 24px);
-          left: 80.08px;
-          width: 1568.9px;
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          justify-content: space-between;
-     }
-     .frameParent {
-          width: 100%;
-          position: fixed;
-          top: 0;
-          background-color: rgba(144, 1, 255, 0.08);
-          height: 100px;
-          overflow: hidden;
-          text-align: left;
-          font-size: 16px;
-          color: rgba(0, 0, 0, 0.4);
-          font-family: Poppins;
-          font-weight: 300;
-     }
+.trumioLogo1Icon {
+  width: 143.1px;
+  position: relative;
+  height: 43.8px;
+  object-fit: cover;
+}
+.bxsearchIcon {
+  width: 20px;
+  position: relative;
+  height: 20px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.searchForYour {
+  position: relative;
+  letter-spacing: -0.02em;
+}
+.bxsearchParent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+}
+.frameWrapper {
+  width: 368px;
+  border-radius: 100px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 12px 24px;
+}
+.trumioLogo1Parent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 32px;
+}
+.primesortDownFillIcon {
+  width: 18px;
+  position: relative;
+  height: 18px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.usersParent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 4px;
+}
+.homeParent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 44px;
+}
+.host {
+  position: relative;
+  letter-spacing: -0.02em;
+  font-weight: 500;
+}
+.hostWrapper {
+  border-radius: 100px;
+  background-color: #fff;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 32px;
+}
+.logInWrapper {
+  border-radius: 100px;
+  background-color: #ae01ff;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 32px;
+  color: #fff;
+}
+.frameDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 24px;
+  color: #ae01ff;
+}
+.frameContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 46px;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.6);
+}
+.frameGroup {
+  position: absolute;
+  top: calc(50% - 24px);
+  left: 80.08px;
+  width: 1568.9px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.frameParent {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: rgba(144, 1, 255, 0.08);
+  height: 100px;
+  overflow: hidden;
+  text-align: left;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.4);
+  font-family: Poppins;
+  font-weight: 300;
+}
 
-     .searchWrapper {
-          position: relative;
-          width: 368px;
-          border-radius: 100px;
-          background-color: rgba(255, 255, 255, 0.2);
-          border: 2px solid rgba(0, 0, 0, 0.1);
-          box-sizing: border-box;
-          overflow: hidden;
-          display: flex;
-          align-items: center;
-          padding: 12px 24px;
-      }
-      
-      .bxsearchIcon {
-          position: absolute;
-          left: 16px;
-          width: 20px;
-          height: 20px;
-          overflow: hidden;
-      }
-      
-      .searchInput {
-          width: 100%;
-          border: none;
-          outline: none;
-          background-color: transparent;
-          padding-left: 48px; /* Added padding to prevent text from overlapping the icon */
-          font-size: 16px;
-          color: rgba(0, 0, 0, 0.6);
-          letter-spacing: -0.02em;
-      }
-      
+.searchWrapper {
+  position: relative;
+  width: 368px;
+  border-radius: 100px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  padding: 12px 24px;
+}
 
+.bxsearchIcon {
+  position: absolute;
+  left: 16px;
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+}
+
+.searchInput {
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding-left: 48px; /* Added padding to prevent text from overlapping the icon */
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.6);
+  letter-spacing: -0.02em;
+}
+
+.cursorPointer {
+  cursor: pointer;
+}
+
+.searchForYour:hover,
+.usersParent:hover,
+.logInWrapper:hover,
+.hostWrapper:hover {
+  cursor: pointer; /* Changes cursor to pointer when hovered */
+}

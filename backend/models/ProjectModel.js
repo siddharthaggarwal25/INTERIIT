@@ -25,7 +25,7 @@ const ProjectSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  HostID :{
+  HostName :{
      type : String  ,
      required: true 
   },
@@ -37,6 +37,10 @@ const ProjectSchema = new mongoose.Schema({
       },
       HeadID: {
         type: mongoose.Schema.Types.ObjectId,
+      },
+      BidAmount:{
+        type : String ,
+        required : true 
       },
       ServingAs :{
         type : String ,
