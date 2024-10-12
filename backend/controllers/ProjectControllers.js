@@ -5,16 +5,16 @@ const HostProject = async (req, res, next) => {
   const HostID = req.params.userID;
 
   // Create a new project instance
-  const createProject = new Project({
-    NameProject,
-    ProjectInfo,
-    Domain,
-    SkillsReq,
-    Deadline,
-    Amount,
-    HostID,
-    Teams: []
-  });
+const createProject = new Project({
+  NameProject,
+  ProjectInfo,
+  Domain,
+  SkillsReq,
+  Deadline,
+  Amount,
+  HostID,
+  Teams: []
+});
 
   console.log(createProject); // For debugging
 
