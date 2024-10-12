@@ -16,7 +16,6 @@ const createProject = new Project({
   Teams: []
 });
 
-  console.log(createProject); // For debugging
 
   let createdProject;
 
