@@ -1,0 +1,154 @@
+.sidebarTitle {
+     position: relative;
+     letter-spacing: -0.04em;
+     font-weight: 600;
+}
+.frameChild {
+     position: absolute;
+     top: 21px;
+     left: 9.5px;
+     width: 3px;
+     height: 60px;
+     overflow: hidden;
+}
+.div {
+     position: absolute;
+     top: 2px;
+     left: 10px;
+     letter-spacing: -0.04em;
+     font-weight: 500;
+}
+.frameGroup {
+     align-self: stretch;
+     position: relative;
+     border-radius: 100px;
+     background-color: #6d38c3;
+     height: 25px;
+     overflow: hidden;
+     flex-shrink: 0;
+}
+.frameItem {
+     width: 4px;
+     position: relative;
+     border-radius: 100px;
+     background-color: #6d38c3;
+     height: 44px;
+     overflow: hidden;
+     flex-shrink: 0;
+}
+.frameInner {
+     width: 4px;
+     position: relative;
+     border-radius: 0px 0px 100px 100px;
+     background-color: #ccc;
+     height: 22px;
+     overflow: hidden;
+     flex-shrink: 0;
+     margin-left: -44px;
+}
+.frameContainer {
+     border-radius: 100px;
+     height: 44px;
+     display: flex;
+     flex-direction: row;
+     align-items: flex-end;
+     justify-content: flex-end;
+     flex-wrap: wrap;
+     align-content: flex-end;
+}
+.div1 {
+     position: absolute;
+     top: 2px;
+     left: 8px;
+     letter-spacing: -0.04em;
+     font-weight: 500;
+}
+.frameDiv {
+     align-self: stretch;
+     position: relative;
+     border-radius: 100px;
+     background-color: #ccc;
+     height: 25px;
+     overflow: hidden;
+     flex-shrink: 0;
+}
+.frameChild2 {
+     width: 4px;
+     position: relative;
+     border-radius: 100px;
+     background-color: #ccc;
+     height: 44px;
+     overflow: hidden;
+     flex-shrink: 0;
+}
+.div2 {
+     position: absolute;
+     top: 2px;
+     left: 7.5px;
+     letter-spacing: -0.04em;
+     font-weight: 500;
+}
+.wrapper {
+     align-self: stretch;
+     position: relative;
+     border-radius: 100px;
+     background-color: #ccc;
+     height: 25px;
+     overflow: hidden;
+     flex-shrink: 0;
+     color: rgba(255, 255, 255, 0.6);
+}
+.frameParent {
+     width: 25px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: flex-start;
+     gap: 2px;
+}
+.accountDetails {
+     align-self: stretch;
+     position: relative;
+     letter-spacing: -0.04em;
+     font-weight: 500;
+}
+.accountDetailsParent {
+     width: 179px;
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     justify-content: flex-start;
+     gap: 49px;
+     font-size: 16px;
+     color: rgba(0, 0, 0, 0.7);
+}
+.stepsContainer {
+     display: flex;
+     flex-direction: row;
+     align-items: flex-start;
+     justify-content: flex-start;
+     gap: 16px;
+     font-size: 14px;
+     color: #fff;
+}
+.sidebar {
+     position: relative;
+     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+     border-radius: 24px;
+     background-color: #fff;
+     width: 20%;
+     height: 100%;
+     overflow: hidden;
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     justify-content: flex-start;
+     padding: 44px 24px;
+     box-sizing: border-box;
+     gap: 44px;
+     text-align: left;
+     font-size: 24px;
+     color: rgba(0, 0, 0, 0.7);
+     font-family: Poppins;
+}
+
