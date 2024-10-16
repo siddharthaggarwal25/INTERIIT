@@ -121,11 +121,12 @@
   width: 100%;
   position: fixed;
   top: 0;
-  background-color: rgba(144, 1, 255, 0.08);
+  background-color: #F4E8FC;
   height: 100px;
   overflow: hidden;
   text-align: left;
   font-size: 16px;
+  z-index: 999;
   color: rgba(0, 0, 0, 0.4);
   font-family: Poppins;
   font-weight: 300;
