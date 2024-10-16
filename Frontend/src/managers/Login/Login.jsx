@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { FaRegEye, FaRegEyeSlash } from "react-icons/fa6";
 import axios from "axios";
 import {toast, Toaster} from "react-hot-toast";
-import { set } from "mongoose";
+import { BASE_URL } from "../../helper";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -25,7 +25,7 @@ const Login = () => {
      }
      
 
-     await axios.post("http://localhost:8000/login", {
+     await axios.post(`${BASE_URL}/login`, {
 
                email,
                password,
@@ -37,10 +37,11 @@ const Login = () => {
                     setTimeout(() => {
                          window.location.href = "/complete-details";
                          }
-                    , 2000);
+                    , 2000);  
           })
           .catch((err) => {
-               // console.log(err.response);
+              //  console.log(err);
+              if(err.response){
                     if(err.response.status === 422){
                         toast.error("User does not exists");
                     }
@@ -50,6 +51,11 @@ const Login = () => {
                     else{
                         toast.error("Something went wrong");
                     }
+                  }
+                  else{
+                      toast.error("Something went wrong");
+                  }
+              
           });
      }
      

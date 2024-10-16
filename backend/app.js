@@ -1,9 +1,23 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const HttpError = require("./utils/Http-Error");
+const cors = require("cors");
 
 const app = express();
 require("dotenv").config();
+
+app.use(cors({
+  origin: '*',  // Your frontend's URL
+  methods: ['GET', 'POST', 'PATCH', 'DELETE', 'PUT'],
+  allowedHeaders: ['Content-Type', 'Authorization'],
+  credentials: true  // If you're using cookies or authorization
+}));
+
+// Preflight handling
+app.options('*', (req, res) => {
+  res.header('Access-Control-Allow-Methods', 'GET, POST, PATCH, DELETE, PUT');
+  res.sendStatus(200);  // Respond with HTTP 200 for preflight
+});
 
 mongoose
   .connect(process.env.MONGODBURL)

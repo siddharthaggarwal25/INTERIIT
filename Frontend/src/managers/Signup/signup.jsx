@@ -3,6 +3,7 @@ import { FaRegEye, FaRegEyeSlash } from "react-icons/fa";
 import MuiPhoneNumber from "mui-phone-number"; // Import MuiPhoneNumber
 import axios from "axios";
 import {toast, Toaster} from "react-hot-toast";
+import { BASE_URL } from "../../helper";
 
 const Signup = () => {
   const [password, setPassword] = useState("");
@@ -27,7 +28,7 @@ const Signup = () => {
          return;
      }
 
-     await axios.post("http://localhost:8000/signup", {
+     await axios.post(`${BASE_URL}/signup`, {
            name,
                phone,
                email,
