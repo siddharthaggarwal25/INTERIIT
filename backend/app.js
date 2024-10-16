@@ -3,10 +3,10 @@ const mongoose = require("mongoose");
 const HttpError = require("./utils/Http-Error");
 
 const app = express();
-
+require("dotenv").config();
 
 mongoose
-  .connect("mongodb://127.0.0.1:27017/InterIIT")
+  .connect(process.env.MONGODBURL)
   .then(() => console.log("Connected to database"))
   .catch((error) => console.log(error));
 
