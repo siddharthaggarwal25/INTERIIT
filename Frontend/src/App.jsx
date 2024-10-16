@@ -16,7 +16,6 @@ import HostProjectPage3 from './managers/HostProject2/HostProject2Pages/HostProj
 
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>

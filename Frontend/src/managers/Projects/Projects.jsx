@@ -1,4 +1,6 @@
 import React from "react"
+import flipkart_grid from "../../assets/flipkart_grid.svg"
+import clock from "../../assets/clock.svg"
 
 
 const Projects = () => {
@@ -57,7 +59,7 @@ const Projects = () => {
           <header className="w-full bg-neutral-200">
             <img
               loading="lazy"
-              src={project.image}
+              src={flipkart_grid}
               alt={`Project ${project.title}`}
               className="object-contain w-full aspect-[1.96]"
             />
@@ -67,7 +69,7 @@ const Projects = () => {
               <div className="flex items-center gap-2">
                 <img
                   loading="lazy"
-                  src="https://via.placeholder.com/24"
+                  src={clock}
                   alt=""
                   className="w-6"
                 />
